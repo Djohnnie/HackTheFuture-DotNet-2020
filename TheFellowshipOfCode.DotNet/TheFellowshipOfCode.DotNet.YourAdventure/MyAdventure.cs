@@ -30,10 +30,10 @@ namespace TheFellowshipOfCode.DotNet.YourAdventure
                     Name = $"Member {i + 1}",
                     Constitution = 11,
                     Strength = 12,
-                    Intelligence = 11,
-                    HealthPoints = 5000
+                    Intelligence = 11
                 });
             }
+
             return Task.FromResult(party);
         }
 
