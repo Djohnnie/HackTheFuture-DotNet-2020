@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheFellowshipOfCode.DotNet.YourAdventure\TheFellowshipOfCode.DotNet.YourAdventure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HTF2020.Contracts">
+      <HintPath>..\.dependencies\HTF2020.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="HTF2020.GameController">
+      <HintPath>..\.dependencies\HTF2020.GameController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

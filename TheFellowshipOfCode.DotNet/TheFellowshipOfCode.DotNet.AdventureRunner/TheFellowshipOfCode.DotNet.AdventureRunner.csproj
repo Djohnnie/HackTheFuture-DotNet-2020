@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheFellowshipOfCode.DotNet.YourAdventure\TheFellowshipOfCode.DotNet.YourAdventure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HTF2020.Contracts">
+      <HintPath>..\.dependencies\HTF2020.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="HTF2020.GameController">
+      <HintPath>..\.dependencies\HTF2020.GameController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyMap" AfterTargets="Build">
+    <Message Text="--- Copying the HTF Adventure MAP to '$(OutputPath)' ---" Importance="high" />
+    <Copy SourceFiles="..\.maps\castle.htf" DestinationFiles="$(OutputPath)\TheFellowshipOfCode.DotNet.YourAdventure.htf" />
+  </Target>
+
+</Project>

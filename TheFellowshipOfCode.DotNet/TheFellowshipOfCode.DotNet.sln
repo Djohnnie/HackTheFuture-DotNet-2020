@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheFellowshipOfCode.DotNet.AdventureRunner", "TheFellowshipOfCode.DotNet.AdventureRunner\TheFellowshipOfCode.DotNet.AdventureRunner.csproj", "{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Hack your code here!", "2. Hack your code here!", "{5E4253CC-CAFE-480B-BC0C-DAA5D9D0357F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Put your unittests here!", "3. Put your unittests here!", "{F1B899CF-3CDB-452A-9C61-9F37DDCE455A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Use the following Console App to debug your adventure!", "4. Use the following Console App to debug your adventure!", "{69279C5A-79CB-4EB6-8AB3-04FF4FB394C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Dependencies. Don't touch!", "0. Dependencies. Don't touch!", "{8BC0F91C-5277-435B-A67C-6AD15E54AECD}"
+	ProjectSection(SolutionItems) = preProject
+		.dependencies\HTF2020.Contracts.dll = .dependencies\HTF2020.Contracts.dll
+		.dependencies\HTF2020.GameController.dll = .dependencies\HTF2020.GameController.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFellowshipOfCode.DotNet.YourAdventure", "TheFellowshipOfCode.DotNet.YourAdventure\TheFellowshipOfCode.DotNet.YourAdventure.csproj", "{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFellowshipOfCode.DotNet.YourTests", "TheFellowshipOfCode.DotNet.YourTests\TheFellowshipOfCode.DotNet.YourTests.csproj", "{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Maps for you to use as tests", "1. Maps for you to use as tests", "{56D60D24-77B2-4EB6-91D6-A9A7600FD626}"
+	ProjectSection(SolutionItems) = preProject
+		.maps\castle.htf = .maps\castle.htf
+		.maps\simple.htf = .maps\simple.htf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9676FBFB-CF50-40D5-AF7F-39F1B2CDDC9E} = {69279C5A-79CB-4EB6-8AB3-04FF4FB394C2}
+		{6F49CFC0-8DF3-4DD8-9386-3BC5321C88B0} = {5E4253CC-CAFE-480B-BC0C-DAA5D9D0357F}
+		{B1ED8EB4-4003-4B77-9DEF-371FB184D3D0} = {F1B899CF-3CDB-452A-9C61-9F37DDCE455A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33A390A0-9024-4221-8B42-C11F71DB9DFF}
+	EndGlobalSection
+EndGlobal
